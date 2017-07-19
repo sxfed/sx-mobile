@@ -1,0 +1,134 @@
+// @import "~antd/dist/antd.less";
+//@icon-url: "/static/iconfont/iconfont"; // 把 iconfont 地址改到本地
+@import './variables';
+#nprogress .bar {
+  background: #fff;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: #fff;
+  border-left-color: #fff;
+}
+
+#main {
+  max-width: 900px;
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+body, .am-popup {
+    background-color: @sideBarMenuActiveBgColor;
+    display: flex;
+    flex-direction: column;
+    color: @fontColor;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+
+// 文本居中
+.text-center {
+    text-align: center;
+}
+
+// 按钮样式
+.btn-white-color {
+    color: #fff;
+    &:hover {
+        color: #fff;
+    }
+    &:active {
+        color: #ddd;
+    }
+}
+// 红色按钮
+.btn-danger.am-button {
+    background-color: @dangerColor;
+    border-color: @dangerColor;
+    &:extend(.btn-white-color);
+    &.am-button-disabled {
+        background-color: #9a7c7a;
+    }
+}
+// 橙色按钮
+.btn-warning.am-button {
+    background-color: @warningColor;
+    border-color: @warningColor;
+    &:extend(.btn-white-color);
+}
+// 灰色按钮
+.btn-gray.am-button {
+    background-color: @grayBackground;
+    border-color: @grayBackground;
+    &:extend(.btn-white-color);
+}
+// 底部按钮
+.footer-btm {
+    flex: 1;
+    border-radius: 0;
+}
+// 重置 antd-mobile 样式
+.am-list-item .am-list-line .am-list-content,
+.am-accordion .am-accordion-item .am-accordion-header,
+.am-accordion .am-accordion-item .am-accordion-content .am-accordion-content-box {
+    color: @fontColor;
+}
+
+// 字体样式
+.font-xxs {
+    font-size: 0.22rem;
+}
+.font-xs {
+    font-size: 0.235rem;
+}
+.font-sm {
+    font-size: 0.25rem;
+}
+.font-md {
+    font-size: 0.275rem;
+}
+.font-gray {
+    color: @grayColor;
+}
+.line-height-sm {
+    line-height: 0.3rem;
+}
+.line-height-md {
+    line-height: 0.5rem;
+}
+.font-red {
+    color: @dangerColor !important;
+}
+.rotate270 {
+    transform: rotate(270deg);
+}
+.rotate90 {
+    transform: rotate(90deg);
+}
+
+.main-frame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.min-list {
+    @min-list-item-height: 68px;
+    .am-list-item {
+        min-height: @min-list-item-height;
+        height: @min-list-item-height;
+    }
+    .am-list-item .am-list-line {
+        min-height: @min-list-item-height;
+        height: @min-list-item-height;
+    }
+}
+
+.page-content {
+
+}
